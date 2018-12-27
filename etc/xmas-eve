@@ -1,0 +1,4 @@
+server {
+	server_name 'xmaseve.tweeres.ca';
+	root /var/www/xmas-eve;
+}

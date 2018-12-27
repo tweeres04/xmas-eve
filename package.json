@@ -1,0 +1,20 @@
+{
+	"name": "xmas-eve",
+	"version": "1.0.0",
+	"main": "index.html",
+	"author": "Tyler Weeres <tweeres04@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"date-fns": "^1.30.1"
+	},
+	"devDependencies": {
+		"html-webpack-plugin": "^3.2.0",
+		"webpack": "^4.28.2",
+		"webpack-cli": "^3.1.2"
+	},
+	"scripts": {
+		"clean": "rm -rf dist",
+		"build": "yarn clean && webpack --config webpack.config.js && cp src/index.html dist/",
+		"deploy": "./scripts/deploy.sh"
+	}
+}
