@@ -13,13 +13,13 @@ if (today > xmas) {
 
 const difference = differenceInDays(xmas, today);
 
-todayDiv.textContent = `🎄 Christmas ${buildEves([], difference)}`;
-daysTillChristmasDiv.textContent = `🎄 (${difference} day${
+todayDiv.textContent = `Christmas ${buildEves([], difference)}`;
+daysTillChristmasDiv.textContent = `(${difference} day${
 	difference === 1 ? '' : 's'
-} till Christmas) 🎄`;
+} till Christmas)`;
 
 function buildEves(currentEves, numberOfEves) {
 	return numberOfEves > 0
 		? buildEves([...currentEves, 'Eve'], numberOfEves - 1)
-		: [...currentEves, '🎄'].join(' ');
+		: currentEves.join(' ');
 }
