@@ -15,7 +15,6 @@
 	"scripts": {
 		"clean": "rm -rf dist",
 		"build": "yarn clean && webpack --config webpack.config.js",
-		"start": "webpack --watch",
-		"deploy": "./scripts/deploy.sh"
+		"start": "webpack --watch"
 	}
 }
